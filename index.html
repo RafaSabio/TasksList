@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, minimum-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link type="shortcut icon" href="./img/logo.png">
+        <script type="text/javascript" src="./scrypt.js" defer></script>
+        <title>Tasks List</title>
+    </head>
+    <body>
+        <section class="container">
+          <form action="#">
+            <h1 class="title">Tasks List</h1>
+            <div class="taskInputContainer">
+                <input id="taskInput" type="text" placeholder="Type Task">
+                <button onclick="addTask(taskInput)" id="plus_button">+</button>
+            </div>
+            <ul class="taskList" id="taskList">
+                
+            </ul>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+          </form>  
+        </section>
+    </body>
+</html>

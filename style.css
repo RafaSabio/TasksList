@@ -1,0 +1,145 @@
+body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.container{
+    width: 800px;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    padding: 20px;
+}
+.container .title{
+    font-family: 'Arial, Helvetica', sans-serif;
+    font-size: 55px;
+    margin: 10px auto 40px auto;
+    font-weight: 600;
+    color: rgba(55, 119, 114, 0.897); 
+}
+.taskInputContainer{
+    display: flex;
+    width: 95%;
+    height: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+.taskInputContainer #taskInput{
+    flex: 1;
+    margin-left: 30px;
+    padding: 5px 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 2px solid black;
+}
+#taskInput::placeholder{
+    color: rgb(61, 60, 60);
+}
+#taskInput:focus{
+    outline: none;
+}
+.taskInputContainer button{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.taskInputContainer button:hover{
+    background-color: rgb(255, 115, 0);
+}
+.progress-container{
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 35px auto;
+}
+.progress-bar{
+    height: 100%;
+    width: 0;
+    background-color: rgba(55, 119, 114, 0.897);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+.taskList{
+    padding-left: 30px;
+}
+.task-item{
+    background-color: white;
+    padding: 10px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 93%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border: 2px solid black;
+}
+.taskList::placeholder{
+    padding-left: 20px;
+}
+.task-item button{
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+.editingTaskInput{ 
+    font-size: 26px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px rgba(24, 179, 166, 0.568);
+}
+span .editingTaskInput{
+    border-bottom: none;
+}
+.editingTaskInput:focus{
+    outline: none;
+}
+.task-item button:hover{
+    color: rgb(255, 115, 0);
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
+#completed-task{
+    font-size: 25px;
+}
+.completed-task{
+    color: gray;
+    text-decoration: line-through black 3px;
+}
+#completed-task:hover{
+    color: rgb(6, 240, 6);
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
+#trash{
+    font-size: 26px;
+    font-weight: 600;
+}
+#trash:hover{
+    color: rgb(89, 184, 187);
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
